@@ -16,7 +16,7 @@ class Floorer:
         self.h = h
         if self.root:
             self.root.destroy()
-        self.root = tk.Tk('Floorer')
+        self.root = tk.Tk()
         xl = w*(CELL_SIZE + CELL_PAD) + CELL_PAD + 2
         yl = h*(CELL_SIZE + CELL_PAD) + CELL_PAD + 2
         self.c = tk.Canvas(self.root, width=xl, height=yl, background='black')
